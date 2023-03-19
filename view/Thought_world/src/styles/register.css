@@ -1,0 +1,196 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.Rmain{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#cc2b5e,#753a88);
+    /* background: linear-gradient(45deg,#734b6d,#42275a); */
+}
+.Rmain .box{
+    position: relative;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+.Rmain .box .imgBx h3{
+    position: absolute;
+    bottom: 30px;
+    z-index: 50;
+    font-size: 20px;
+}
+.Rmain .box .imgBx h3 a{
+    /*text-decoration: none;*/
+    color: white;
+}
+.Rmain .box .imgBx{
+    position: relative;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.Rmain .box .imgBx img{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+}
+.Rmain .box2 form{
+    position: relative;
+    height: auto;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.Rmain .box2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 5px 50px;
+    background: white;
+}
+.Rmain .box2 .inputBx{
+    position: relative;
+    top: 10px;
+    height: 60px;
+    border: 1px solid none;
+    margin-top: 20px;
+}
+.Rmain .box2 .inputBx:nth-child(1){
+    position: absolute;
+    width: 190px;
+    margin: 0;
+}
+.Rmain .box2 .inputBx:nth-child(2){
+    position: relative;
+    left: 200px;
+    width: 190px;
+    margin: 0;
+}
+
+
+.Rmain .box2 .inputBx:nth-child(6){
+    /* border: 1px solid #000; */
+}
+
+.Rmain .box2 .inputBx label{
+    position: absolute;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.Rmain .box2 .inputBx .text{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    user-select: none;
+    pointer-events: none;
+    transition: .2s;
+}
+.Rmain .box2 .inputBx .line{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px; 
+    width: 0px;
+    background: blue;
+    transition: .2s;
+}
+.Rmain .box2 .inputBx input:focus ~ .text,
+.Rmain .box2 .inputBx input:valid ~ .text{	
+    bottom: 30px;
+    color: blue;
+}
+.Rmain .box2 .inputBx input:focus ~ .line,
+.Rmain .box2 .inputBx input:valid ~ .line
+{	
+    width: 80%;
+}
+
+.Rmain .box2 .inputBx input[type="password"],
+.Rmain .box2 .inputBx input[type="email"],
+.Rmain .box2 .inputBx input[type="tel"],
+.Rmain .box2 .inputBx input[type="text"]{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    /* border: 1px solid black; */
+}
+.imgBx h1{
+    position: absolute;
+    bottom: 55px;
+    font-family: sans-serif;
+    font-size: 50px;
+    z-index: 120;
+    color: white;
+}
+.btnBx{
+    position: relative;
+    /* bottom: 50px; */
+}
+.btnBx input[type="submit"]{
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.btnBx input[type="submit"]:hover{
+    background: black;
+    color: white;
+}
+
+
+/*/*/
+
+@media screen and (max-width: 520px){
+    
+    .Rmain .box .imgBx{
+        visibility: hidden;
+        width: 0;
+    }
+    .Rmain .box{
+        width: 350px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Rmain .box2{
+        padding: 5px 35px;
+    }
+    .Rmain .box2 .inputBx{
+        position: relative;
+        width: 300px;
+    }
+    .Rmain .box2 .inputBx:nth-child(1){
+        position: absolute;
+        width: 150px;
+        margin: 0;
+    }
+    .Rmain .box2 .inputBx:nth-child(2){
+        position: relative;
+        left: 150px;
+        width: 150px;
+        margin: 0;
+    }
+    .Rmain .box2{
+        width: 100%;
+    }
+}

@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.Lmain{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#cc2b5e,#753a88);
+    /*background: linear-gradient(45deg,#734b6d,#42275a);*/
+}
+.Lmain .box{
+    position: relative;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+}
+.Lmain .box .imgBx{
+    position: relative;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.Lmain .box .imgBx img{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+.Lmain .box2 form{
+    position: relative;
+    height: 100%;
+}
+.Lmain .box2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    background: white;
+}
+.Lmain .box2 .inputBx{
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid none;
+}
+.Lmain .box2 .inputBx .text{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    user-select: none;
+    pointer-events: none;
+    transition: .2s;
+}
+.Lmain .box2 .inputBx .line{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px; 
+    width: 20px;
+    background: blue;
+    transition: .2s;
+}
+
+.Lmain .box2 .inputBx  input:focus ~ .text,
+.Lmain .box2 .inputBx  input:valid ~ .text{	
+    bottom: 30px;
+    color: blue;
+}
+.Lmain .box2 .inputBx  input:focus ~ .line,
+.Lmain .box2 .inputBx  input:valid ~ .line{	
+    width: 80%;
+}
+/**/
+.Lmain .box2 .inputBx label{
+    position: absolute;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.Lmain .box2 .inputBx input[type="password"],
+.Lmain .box2 .inputBx input[type="text"]{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    /* border: 1px solid black; */
+}
+.Lmain .box2 .inputBx input[type="submit"]{
+    position: relative;
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+.Lmain .box2 .inputBx input[type="submit"]:hover{
+    background: black;
+    color: white;
+}
+.Lmain .box2 .inputBx a{
+    position: relative;
+    /*color: black;*/
+}
+.box2 h1{
+    position: absolute;
+    top: 50px;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+
+/*/*/
+
+@media screen and (max-width: 520px){
+    
+    .Lmain .box .imgBx{
+        visibility: hidden;
+        width: 0;
+    }
+    .Lmain .box{
+        background: red;
+        width: 350px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Lmain .box2{
+        /*left: -120px;*/
+        width: 100%;
+    }
+    .userNot{
+        color: black;
+    }
+}

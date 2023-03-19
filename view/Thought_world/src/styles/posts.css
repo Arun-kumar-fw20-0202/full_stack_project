@@ -1,0 +1,393 @@
+.SingleMain{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    
+}
+.SingleMain > .card > .comments::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .SingleMain > .card > .comments::-webkit-scrollbar-track {
+    border-radius: px;
+    background: #c9cacc;
+  }
+  
+  .SingleMain > .card > .comments::-webkit-scrollbar-track:hover {
+    background: #78797a;
+  }
+  
+  .SingleMain > .card > .comments::-webkit-scrollbar-thumb {
+    background: #3d5585; 
+    border-radius: 10px;
+  }
+  
+  .SingleMain > .card > .comments::-webkit-scrollbar-thumb:hover {
+    background: #01143b; 
+  }
+.SingleMain > .card > .comments{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0 20px;
+    overflow-y: scroll;
+    /* background-color: blue; */
+}
+.SingleMain > .card > .comments > .text{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 4px 10px;
+    /* border: 1px solid red; */
+}
+.SingleMain > .card > .comments > .text > .avatar a{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    min-height: 10vh;
+    color: black;;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+}
+.SingleMain > .card > .comments > .text > .avatar  img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.SingleMain > .card > .comments > .text > p{
+    width: 100%;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    line-height: 23px;
+    /* border: 1px solid #000; */
+}
+.SingleMain > .card:last-child{
+    /* background: red; */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.SingleMain > .card:last-child > .head{
+    position: relative;
+    padding: 8px 0;
+    z-index: 120;
+    background-color: rgba(215, 215, 215, 0.5);
+    /* border: 1px solid #000; */
+}
+
+.SingleMain > .card:last-child >.option{
+    position: absolute;
+    top: 15px;
+    font-size: 20px;
+    right: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: red; */
+    cursor: pointer;
+}
+.SingleMain > .card:last-child >.more::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    background-color: white;
+}
+.card > .head.active > .more{
+    visibility: visible;
+    opacity: 1;
+}
+.SingleMain > .card:last-child >.more{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+.SingleMain > .card:last-child >.more > a:first-child{
+    color: red;
+    font-weight: 500;
+}
+.SingleMain > .card:last-child >.more > a{
+    padding: 10px 0;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.SingleMain > .card:last-child >span > a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    gap: 10px;
+    padding: 0px 10px;
+    /* border: 1px solid black; */
+}
+
+.SingleMain > .card:last-child > .head img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.AllCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card{
+    min-height: 20vh;
+    width: 25%;
+    display:flex;
+    margin: 10px 0;
+    flex-direction: column;
+    border: 1px solid #cccc;
+}
+.card > .head{
+    position: relative;
+    padding: 8px 0;
+    z-index: 120;
+    background-color: rgba(215, 215, 215, 0.5);
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* border: 1px solid #000; */
+}
+.card > .head span{
+    /* background-color: blue; */
+}
+.card > .head > .headSpan .username{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.card > .head > .headSpan .username button{
+    background: transparent;
+    border: none;   
+    cursor: pointer;
+    color: royalblue;
+}
+.card > .head > .headSpan a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 20px;
+}
+.card > .head > .headSpan{
+    display: flex;
+    /* border: 1px solid lime; */
+}
+.card > .head > .option{
+    position: absolute;
+    top: 15px;
+    font-size: 20px;
+    right: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: red; */
+}
+.card > .head > .more::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    z-index: -1;
+    background-color: white;
+}
+/* .card > .head.active > .more {
+    visibility: visible;
+    opacity: 1;
+} */
+.card > .head > .option.active ~ .more {
+    visibility: visible;
+    opacity: 1;
+}
+.card > .head > .more{
+    position: absolute;
+    right: 0;
+    top: 60px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+.card > .head > .more > a:first-child{
+    color: red;
+    font-weight: 500;
+}
+.card > .head > .more > a{
+    padding: 10px 0;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.card > .head > span > a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    font-size: 15px;
+    font-family: sans-serif;
+    gap: 10px;
+    padding: 0px 10px;
+    /* border: 1px solid black; */
+}
+
+.card > .head img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.card > .content{
+    width: 100%;
+    height: 100%;
+    /* background: red; */
+}
+.card > span{
+    font-weight: 600;
+    padding: 20px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card > .content > iframe,
+.card > .content > video,
+.card > .content > img{
+    width: 100%;
+    /* background-color: black; */
+}
+.card > .likes{
+    position: relative;
+    display:flex;
+    gap: 20px;
+    padding: 10px 20px;
+    /* border: 1px solid black; */
+}
+.card > .likes > a:last-child{
+    position: absolute;
+    right: 30px;
+}
+.card > .likes > a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 6px;
+    font-size: 20px;
+    /* border: 1px solid red; */
+}
+.card > .comment{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding: 10px 4px; */
+    /* border: 1px solid black; */
+}
+.card > .comment > form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.card > .comment > form > button{
+    padding: 7px 10px;
+}
+.card > .comment > form > input{
+    width: 100%;
+    padding: 7px 10px;
+}
+
+
+
+
+
+.storySideBr{
+    position: fixed;
+    top: 42px;
+    width: 100px;
+    height: 80vh;
+    overflow-y: scroll;
+    padding: 0 10px;
+    /* border: 1px solid #000; */
+}
+.storySideBr > .storys{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* border: 1px solid #000; */
+}
+.storySideBr > .storys > h1{
+    position: absolute;
+    left: 10px;
+    bottom: -20px;
+    padding: 0 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+.storySideBr > .storys > img{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    object-position: 0px -5px;
+    padding: 8px;
+    border-radius:50%;
+    border: 1px solid royalblue;
+}
+
+.storySideBr > .storys:first-child > img{
+    border: none;
+}
+.storySideBr::-webkit-scrollbar {
+    width: 2px;
+}
+/* .storySideBr::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+} */
+.storySideBr::-webkit-scrollbar-thumb {
+    background: royalblue; 
+    border-radius:10px;
+}

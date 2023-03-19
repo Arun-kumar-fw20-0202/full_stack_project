@@ -1,0 +1,138 @@
+
+body{
+    font-family: sans-serif;
+}
+.followersPopup{
+    position: fixed;
+    z-index: 120;
+    background: rgba(0,0,0,0.5);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+.followersPopup > .popup > button{
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    font-size: 30px;
+    cursor: pointer;
+    background: transparent;
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: 100;
+}
+.followersPopup > .popup{
+    position: relative;
+    padding: 10px;
+    height: 450px;
+    width: 450px;
+    /* text-align: center; */
+    background-color: white;
+}
+
+.followersPopup > .popup > h1{
+    text-align: center;
+}
+.followersPopup > .popup > .list{
+    height: 80%;
+    overflow-y: scroll;
+    /* border: 1px solid black; */
+}
+
+.followersPopup > .popup > .list::-webkit-scrollbar {
+    width: 5px;
+}
+/* .followersPopup > .popup > .list::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+} */
+.followersPopup > .popup > .list::-webkit-scrollbar-thumb {
+    background: royalblue; 
+    border-radius:10px;
+}
+.followersPopup > .popup > .list > .userItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border: 1px solid rgb(212, 212, 212);
+}
+.followersPopup > .popup > .list > .userItem span{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+.followersPopup > .popup > .list > .userItem span h2{
+    font-size: 20px;
+}
+.followersPopup > .popup > .list > .userItem img{
+    width: 40px;
+    border-radius: 50%;
+}
+/*  */
+.profile_main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+    /* background-color: red; */
+}
+
+.profile_main > .P_top{
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+    /* align-items: center; */
+    gap: 50px;
+    border: 1px solid black;
+}
+
+.profile_main > .P_top > .avatar{
+    width: 20%;
+    /* border: 1px solid black; */
+}
+.profile_main > .P_top > .avatar > img{
+    border-radius: 50%;
+    width: 100%;
+}
+.profile_main > .P_top > .data{
+    width: 100%s;
+    /* border: 1px solid black; */
+}
+
+.profile_main > .P_top > .data > .totla button{
+    cursor: pointer;
+}
+.profile_main > .P_top > .data > .totla{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.profile_main > .P_top > .data > .totla h3{
+    cursor: pointer;
+}
+.profile_main > .My_posts{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.profile_main > .My_posts > .card{
+    width: 95%;
+    height: 400px;
+}
+.profile_main > .My_posts > .card > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: black;
+    
+}
